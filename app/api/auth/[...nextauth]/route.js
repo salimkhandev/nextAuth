@@ -5,8 +5,8 @@ const handler= NextAuth({
     providers: [
         // OAuth authentication providers...
         GithubProvider({
-            clientId:'Ov23limv2SK3iEIz6oNS',
-            clientSecret:'fab9235a279b480270c861c78b2adf098f7eb289',
+            clientId: process.env.GITHUB_ID,
+            clientSecret: process.env.GITHUB_SECRET,
         }),
     ]
 })
